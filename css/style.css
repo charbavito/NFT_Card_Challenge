@@ -25,6 +25,7 @@ body{
     left: 0;
     right: 0;
     margin: auto;
+    box-shadow: 0px 0px 25px #080f1a;
 }
 .main .img-cube{
     margin: auto;
@@ -35,6 +36,9 @@ body{
     padding: 14px 10px;
     border-radius: 25px;
 }
+/* .main .img-cube:hover{
+    background-color: rebeccapurple;
+} */
 .main .text{
     padding: 0 20px;
     margin: 0px;
@@ -42,13 +46,16 @@ body{
 .main h1{
     color: var(--white);
     font-weight: 600;
-    font-size: 25px;
+    font-size: 20px;
     padding-top: 17px;
+}
+.main h1:hover{
+    color: var(--cian);
 }
 .main h2{
     color: var(--softBlue);
     font-weight: 300;
-    font-size: 18px;
+    font-size: 16px;
     padding-top: 17px;
 }
 .days-left{
@@ -60,12 +67,13 @@ body{
     color: var(--cian);
     font-size: 15px;
     font-weight: 00;
-    font-size: 18px;
+    font-size: 15px;
 }
 .days-left span{
     color: var(--softBlue);
     font-weight: 300;
     padding: 0;
+    font-size: 15px;
 }
 .creation{
     display: flex;
@@ -86,7 +94,10 @@ body{
 }
 .creation span{
     color: var(--white);
-    font-weight: 600;
+    font-weight: 400;
+}
+.creation span:hover{
+    color: var(--cian);
 }
 .attribution{
     position: absolute;
@@ -103,7 +114,6 @@ body{
     color: var(--cian);
     font-family: 600;
 }
-
 
 
 /*
