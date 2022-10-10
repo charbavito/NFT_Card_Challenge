@@ -27,18 +27,46 @@ body{
     margin: auto;
     box-shadow: 0px 0px 25px #080f1a;
 }
-.main .img-cube{
+.main-images{
+    display: flex;
+    position: relative;
+}
+.main .main-images:before{
+    content: "";
+    background: var(--cian);
+    width: 90%;
+    height: 90%;
+    position: absolute;
     margin: auto;
+    inset: 0;
+    border-radius: 25px;
+    opacity: 0.5;
+    z-index: 1;
+    pointer-events: none;
+}
+.main .img-cube{
+    margin: 14px auto;
     position: relative;
     width: 90%;
     display: flex;
-    justify-content: center;
-    padding: 14px 10px;
     border-radius: 25px;
+    z-index: 3;
 }
-/* .main .img-cube:hover{
-    background-color: rebeccapurple;
-} */
+.main .img-cube:hover{
+    margin: 14px auto;
+    position: relative;
+    width: 90%;
+    border-radius: 25px;
+    z-index: 0;
+}
+.main .img-eye{
+    position: absolute;
+    width: 45px;
+    margin: auto;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+}
 .main .text{
     padding: 0 20px;
     margin: 0px;
@@ -64,16 +92,28 @@ body{
     padding: 17px 0;
 }
 .days-left h3{
+    display: inline-flex;
     color: var(--cian);
     font-size: 15px;
     font-weight: 00;
     font-size: 15px;
 }
+.days-left h3:before{
+    content: url(../images/icon-ethereum.svg);
+    padding-right: 6px;
+}
 .days-left span{
+    display: inline-flex;
     color: var(--softBlue);
     font-weight: 300;
     padding: 0;
     font-size: 15px;
+    align-items: center;
+}
+.days-left span:before{
+    display: inline-flex;
+    content: url(../images/icon-clock.svg);
+    padding-right: 6px;
 }
 .creation{
     display: flex;
@@ -114,12 +154,3 @@ body{
     color: var(--cian);
     font-family: 600;
 }
-
-
-/*
-Soft blue: #8bacda
-Cyan: #00fff7 
-Very dark blue (main BG): #0d192b
-Very dark blue (card BG): #14253d
-Very dark blue (line): #2f415b
-*/
