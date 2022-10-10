@@ -5,6 +5,7 @@
     --white: #ffffff;
     --bgColor: #0d192b;
     --bgCard: #14253d;
+    --shadow: #080f1a;
 }
 *{
     margin: 0;
@@ -25,38 +26,38 @@ body{
     left: 0;
     right: 0;
     margin: auto;
-    box-shadow: 0px 0px 25px #080f1a;
+    box-shadow: 0px 0px 25px var(--shadow);
 }
-.main-images{
+.central-images{
     display: flex;
     position: relative;
 }
-.main .main-images:before{
+.main .central-images:before{
     content: "";
-    background: var(--cian);
+    background-color: var(--cian);
     width: 90%;
     height: 90%;
     position: absolute;
     margin: auto;
     inset: 0;
-    border-radius: 25px;
+    border-radius: 7px;
     opacity: 0.5;
     z-index: 1;
     pointer-events: none;
 }
 .main .img-cube{
-    margin: 14px auto;
+    margin: 14px 15px;
     position: relative;
     width: 90%;
     display: flex;
-    border-radius: 25px;
+    border-radius: 7px;
     z-index: 3;
 }
 .main .img-cube:hover{
     margin: 14px auto;
     position: relative;
     width: 90%;
-    border-radius: 25px;
+    border-radius: 7px;
     z-index: 0;
 }
 .main .img-eye{
@@ -95,7 +96,6 @@ body{
     display: inline-flex;
     color: var(--cian);
     font-size: 15px;
-    font-weight: 00;
     font-size: 15px;
 }
 .days-left h3:before{
@@ -132,11 +132,12 @@ body{
     color: var(--softBlue);
     font-weight: 300;
 }
-.creation span{
+.creation a{
     color: var(--white);
     font-weight: 400;
+    text-decoration: none;
 }
-.creation span:hover{
+.creation a:hover{
     color: var(--cian);
 }
 .attribution{
@@ -152,5 +153,4 @@ body{
 }
 .attribution a{
     color: var(--cian);
-    font-family: 600;
 }
