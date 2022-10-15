@@ -27,8 +27,9 @@ As the first one, this challenge consists of creating a simple static page using
 
 ### Links
 
-- [Solution on Frontend Mentor](#)
-- [Live at Versel](#)
+- [Live Solution at Versel](https://nft-card-challenge-nu.vercel.app/)
+- [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/html5-css3-flexbox-vscode-git-and-github-fg0zh8J-hJ)
+
 
 ## My process
 
